@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasad V Potluri Siddhartha Institute of Technology</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Verdana', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #444;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #004d4d;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.2em;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 5px 10px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #f18d35;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: white;
+            color: darkgreen;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            margin: 0 0 1rem;
+            color: #004d4d;
+        }
+
+        /* Image Carousel */
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel-track {
+            display: flex;
+            width: 200%; /* Two images */
+            animation: slide 8s infinite;
+        }
+
+        .carousel-track img {
+            width: 100%;
+            height: auto;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+
+        /* Section and Footer */
+        .section {
+            padding: 3rem 1rem;
+            text-align: center;
+            background-color: #fff;
+            margin: 2rem auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #004d4d;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Contact and About Styles */
+        #contact, #aboutus {
+            padding: 3rem 1rem;
+            text-align: center;
+            background-color: #fff;
+            margin: 2rem auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #contact h2, #aboutus h2 {
+            color: #004d4d;
+            margin-bottom: 1.5rem;
+        }
+
+        #contact p, #aboutus p {
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+
+        .course-card {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+            margin: 1rem auto;
+            max-width: 800px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        .course-card img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+
+       #aboutus .aboutus-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+#aboutus .aboutus-image {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#aboutus .aboutus-text {
+    width: 55%;
+    padding-left: 2rem;
+    text-align: left;
+}
+
+#aboutus h2 {
+    color: #004d4d;
+    margin-bottom: 1.5rem;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Prasad V Potluri Siddhartha Institute of Technology</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section id="home" class="hero">
+    <div class="container">
+        <h2>Welcome to Prasad V Potluri Siddhartha Institute of Technology</h2>
+        <div class="welcome-image">
+            <img src="C:\Users\tunga\OneDrive\Desktop\College_pic.jpg" alt="PVPSIT Campus Image" style="width: 100%; max-width: 800px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        </div>
+    </div>
+</section>
+
+
+    <section id="courses" class="section">
+        <div class="container">
+            <h2>Courses Offered</h2>
+            <div class="courses-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div class="course-card" style="background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+                    <img src="C:\Users\tunga\OneDrive\Desktop\CSE_LOGO.jpg" alt="CSE" style="width: 100px; height: auto; margin-bottom: 1rem;">
+                    <h3 style="color: #004d4d; font-size: 1.5rem;">Computer Science Engineering (CSE)</h3>
+                    <p style="font-size: 1rem; color: #555;">Focuses on programming, algorithms, software engineering, and cutting-edge technologies like Artificial Intelligence, Cloud Computing, and Cybersecurity to solve real-world problems and drive digital transformation.</p>
+                </div>
+                <div class="course-card" style="background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+                    <img src="C:\Users\tunga\OneDrive\Desktop\ECE.png" alt="ECE" style="width: 100px; height: auto; margin-bottom: 1rem;">
+                    <h3 style="color: #004d4d; font-size: 1.5rem;">Electronics and Communication Engineering (ECE)</h3>
+                    <p style="font-size: 1rem; color: #555;">Emphasizes VLSI design, communication systems, and emerging technologies like IoT, Embedded Systems, and wireless communication to design smarter devices and systems for a connected world.</p>
+                </div>
+                <div class="course-card" style="background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+                    <img src="C:\Users\tunga\OneDrive\Desktop\EEE.png" alt="EEE" style="width: 100px; height: auto; margin-bottom: 1rem;">
+                    <h3 style="color: #004d4d; font-size: 1.5rem;">Electrical and Electronics Engineering (EEE)</h3>
+                    <p style="font-size: 1rem; color: #555;">Involves power systems, control engineering, and renewable energy technologies, preparing students to innovate and manage modern energy solutions for a sustainable future.</p>
+                </div>
+                <div class="course-card" style="background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+                    <img src="C:\Users\tunga\OneDrive\Desktop\MECH.jpg" alt="ME" style="width: 100px; height: auto; margin-bottom: 1rem;">
+                    <h3 style="color: #004d4d; font-size: 1.5rem;">Mechanical Engineering (ME)</h3>
+                    <p style="font-size: 1rem; color: #555;">Covers mechanical design, robotics, thermal engineering, and manufacturing technologies to drive innovation in industrial and automotive systems.</p>
+                </div>
+                <div class="course-card" style="background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+                    <img src="C:\Users\tunga\OneDrive\Desktop\CIVIL.jpg" alt="Civil" style="width: 100px; height: auto; margin-bottom: 1rem;">
+                    <h3 style="color: #004d4d; font-size: 1.5rem;">Civil Engineering</h3>
+                    <p style="font-size: 1rem; color: #555;">Focuses on structural design, transportation systems, and sustainable infrastructure development using modern tools like AutoCAD, BIM, and environmental analysis.</p>
+                </div>
+                <div class="course-card" style="background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+                    <img src="C:\Users\tunga\OneDrive\Desktop\MBA.jpg" alt="MBA" style="width: 100px; height: auto; margin-bottom: 1rem;">
+                    <h3 style="color: #004d4d; font-size: 1.5rem;">Master of Business Administration (MBA)</h3>
+                    <p style="font-size: 1rem; color: #555;">Equips students with leadership, strategic management, financial analysis, and entrepreneurial skills, preparing them to excel in global business environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section id="aboutus" class="section">
+    <div class="container">
+        <h2>About Us</h2>
+        <div class="aboutus-content">
+            <img src="C:\Users\tunga\OneDrive\Desktop\College_photo.jpg" alt="PVPSIT Campus" class="aboutus-image">
+            <div class="aboutus-text">
+                <p>Prasad V Potluri Siddhartha Institute of Technology, established in 1998, is a pioneering self-financed institution renowned for academic excellence and discipline. Sponsored by Siddhartha Academy of General and Technical Education, it runs 18 educational institutions across diverse fields of study.</p>
+                <p>The college offers B.Tech programs in various disciplines such as Computer Science Engineering (CSE), CSE - Artificial Intelligence and Machine Learning (AI & ML), Information Technology (IT), and many others. It also offers M.Tech programs and MBA.</p>
+                <p>Located in the well-connected city of Vijayawada, the campus spans 19.98 acres, with state-of-the-art infrastructure and laboratories. The institution is autonomous, accredited by NAAC with an A+ grade, and follows ISO 9001-2015 standards.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Prasad V Potluri Siddhartha Institute of Technology,</p>
+            <p>Kanuru, Vijayawada-520 007, Andhra Pradesh, India.</p>
+            <p><strong>Tel:</strong> 0866-2581699, 0866-2583037</p>
+            <p><strong>Email:</strong> <a href="https://mail.google.com/mail/u/2/#inbox?compose=GTvVlcSDZPCFLsZgcdbwWkzlQQkJtGZzTXbwkzRfzKWwxqzFJDxbbtBLbNxwXSNlNtJjlrDPBxgSH">principal@pvpsiddhartha.ac.in
+</a></p>
+            <p><strong>Fax:</strong> 0866-2581184</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Prasad V Potluri Siddhartha Institute of Technology | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
